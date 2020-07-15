@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        float:right;
+    }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topnav a.active {
+                background-color: #4CAF50;
+                color: white;
+            }
+</style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="Home.html">Home</a>
+       
+        <a href="Login.html">logout</a>
+    </div>
+  <br /><br />
+
+    <center>
+        <h1 style="color:darkblue; font-size:40px;">Team Yoneak</h1>
+        <input style="outline-color: white;" type="image" id="kart" src="images/apply.PNG" height="130" width="140" onclick="apply()" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="outline-color: white;" type="image" id="kart1" src="images/partnership.PNG" height="170" width="200" onclick="partner()" />
+        <br /><br /><br />  <br /><br /><br />
+        <input style="outline-color: white;" type="image" id="kart2" src="images/myprogram.PNG" height="150" width="150" onclick="program()" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="outline-color: white;" type="image" id="kart3" src="images/payments.PNG" height="150" width="150" onclick="payment()" />
+    </center>
+    <script type="text/javascript">
+        function apply() {
+            window.location.href = "Apply.html";
+        }
+        function partner() {
+            window.location.href = "partnership.html";
+        }
+        function program() {
+            window.location.href = "myprogram.html";
+        }
+        function payment() {
+            window.location.href = "payment.html";
+        }
+    </script>
+</body>
+</html>

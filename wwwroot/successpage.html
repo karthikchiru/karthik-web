@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            float: right;
+        }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+        .first {
+            width: 500px;
+            height: 170px;
+            border: 2px solid darkblue;
+            border-radius: 20px;
+            outline-color: darkblue;
+            font-size: 20px;
+            color:black;
+        }
+        .second {
+            width: 500px;
+            height: 500px;
+            border: 2px solid darkblue;
+            border-radius: 20px;
+            outline-color: darkblue;
+            font-size: 20px;
+            color: black;
+        }
+        .submit {
+            color: darkblue;
+            outline-color: white;
+            font-size: 30px;
+            border: 2px solid white;
+        }
+    </style>
+        </head >
+<body onload="karthik()">
+    <div class="topnav">
+        <a class="active" href="UserHome.html"> Home</a>
+
+        <a href="Login.html"> logout</a>
+    </div>
+
+    <br /> <br />
+    <center style="color:darkblue;">
+        <h1 style="color:darkblue; font-size:40px;">Apply For Internship</h1>
+        <div class="first">
+            <h4>Thank you User You Have submitted your form Successfully</h4>
+          
+            <h4>We request you to wait till we verify and approve your Application</h4>
+        </div>
+        <br/><br/>
+             <div class="second" id="kart">
+                 <h4>Details You Submitted</h4>
+                 <p id="one"></p>
+                 <p id="two"></p>
+                 <p id="three"></p>
+                 <p id="four"></p>
+                 <p id="five"></p>
+                 <p id="six"></p>
+                 <p id="seven"></p>
+                 <p id="eight"></p>
+                 <p id="nine"></p>
+                 <input type="submit" id="submit" class="submit" value="Edit"/>
+             </div>
+         
+        </center>
+    <script type="text/javascript">
+        function karthik() {
+            var names = "karthik";
+            document.getElementById("one").innerHTML = "Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + names;
+            document.getElementById("one").innerHTML = "Location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India";
+            document.getElementById("three").innerHTML = "Platform&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram";
+            document.getElementById("four").innerHTML = "Program&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Influencer";
+            document.getElementById("five").innerHTML = "Target&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100post/week";
+            document.getElementById("six").innerHTML = "Education&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UG";
+            document.getElementById("seven").innerHTML = "Skills&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEO";
+            document.getElementById("eight").innerHTML = "Alternate contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9876543210";
+            document.getElementById("nine").innerHTML = "payment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wire transfer";
+
+        }
+    </script>
+</body>
+        </html >

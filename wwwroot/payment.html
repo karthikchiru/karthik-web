@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            float: right;
+        }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+             .first {
+            width: 100px;
+            height: 150px;
+            border: 2px solid darkblue;
+           text-align:center;
+            outline-color: darkblue;
+            background-color:darkblue;
+            font-size: 25px;
+            color:white;
+        }
+        .second {
+            width: 500px;
+            height: 200px;
+            border: 2px solid darkblue;
+            border-radius: 20px;
+            outline-color: darkblue;
+            font-size: 20px;
+        }
+        .three{
+            width: 400px;
+            height: 80px;
+            border: 2px solid darkblue;
+           text-align:center;
+            outline-color: darkblue;
+            background-color:darkblue;
+            font-size: 25px;
+            color:white;
+        }
+    </style>
+</head>
+<body onload="karthik()">
+
+    <div class="topnav">
+        <a class="active" href="UserHome.html">Home</a>
+
+        <a href="Login.html">logout</a>
+    </div>
+    <br /><br />
+          <center>
+              <h1 style="color:darkblue; font-size:40px;">View Payments</h1>
+              <table>
+                  <tr>
+
+                      <td style="padding-right: 20px">
+                          <div class="first">
+                              <h4>Total points</h4>
+                              <h4 id="kar"></h4>
+                              &nbsp;&nbsp;&nbsp;
+                          </div>
+                      </td>
+
+                      <td style="padding-right: 20px">
+
+                          <div class="first">
+                              <h4>Total points</h4>
+                              <h4 id="kar1"></h4>
+                              &nbsp;&nbsp;&nbsp;
+                          </div>
+                      </td>
+
+                      <td>
+
+
+                          <div class="first">
+                              <h4>Total points</h4>
+                              <h4 id="kar2"></h4>
+                          </div>
+                      </td>
+                  </tr>
+              </table>
+              <h3 style="color:darkblue;font-size:35px;">Request Withdrawl</h3>
+              <div class="second">
+                  <p style="color:black;font-size:20px;text-decoration:solid;">
+                      Available Points:
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="available" style="border: 2px solid darkblue; height:25px;" />
+                  </p>
+                  <p style="color:black;font-size:20px;text-decoration:solid;">
+                      Withdrawable Points:
+                      <input type="text" id="available" style="border: 2px solid darkblue; height:25px;" />
+                  </p>
+                  <p style="color:black;font-size:20px;text-decoration:solid;">
+                      Request Withdraw:
+                      &nbsp;&nbsp;  <input type="text" placeholder="Enter your points to withdraw" id="available" style="border: 2px solid darkblue; height:25px;" />
+                  </p>
+                  <h5>Note: Minimum withdrawl points is 500</h5>
+              </div>
+              <h2 style="color:darkblue;font-size:35px;">Payment History</h2>
+              <div class="three">
+
+              </div>
+              <br /><br />
+              <div class="three">
+
+              </div>
+              <br /><br />
+              <div class="three">
+
+              </div>
+          </center>
+    <script type="text/javascript">
+        function karthik() {
+            var first = 1260;
+            var second = 760;
+            var third = 500;
+            document.getElementById('kar').innerHTML = first;
+            document.getElementById('kar1').innerHTML = second;
+             document.getElementById('kar2').innerHTML = third;
+
+        }
+    </script>
+</body>
+</html>

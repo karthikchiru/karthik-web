@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            float: right;
+        }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+        .drop {
+            width: 400px;
+            height: 40px;
+            border: 2px solid darkblue;
+            border-radius:8px;
+            outline-color: darkblue;
+            font-size:18px;
+        }
+        ::placeholder{
+            color:black;
+        }
+        .drop1{
+            width: 180px;
+            height: 150px;
+             border: 2px solid darkblue;
+            border-radius:8px;
+        }
+        .check{
+            width:20px;
+            height:20px;
+            
+        }
+        .submit{
+            color:darkblue;
+            outline-color: white;
+             font-size:30px; 
+             border: 2px solid white;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="UserHome.html">Home</a>
+
+        <a href="Login.html">logout</a>
+    </div>
+    <br /><br />
+          <center style="color:darkblue;">
+              <h1 style="color:darkblue; font-size:40px;">Apply For Internship</h1>
+              <select name="cars" id="cars" class="drop">
+                  <option value="Choose Your Location">Choose Your Location</option>
+                  <option value="Vijayanagar, Bangalore, Karnataka">Vijayanagar, Bangalore, Karnataka</option>
+                  <option value="Cubbonpet, Banglore, Karnataka">Cubbonpet, Banglore, Karnataka</option>
+
+              </select>
+              <br /><br />
+              <select name="cars1" id="cars1" class="drop">
+                  <option value="Choose Your Platform">Choose Your Platform</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Linkedin">Linkedin</option>
+              </select>
+              <br /><br />
+              <select name="cars2" id="cars2" class="drop">
+                  <option value="Choose Your Program">Choose Your Program</option>
+                  <option value="Influencer">Influencer</option>
+                  <option value="interner">Interner</option>
+
+              </select>
+              <br /><br />
+              <select name="cars3" id="cars3" class="drop">
+                  <option value="Choose Your Target">Choose Your Target</option>
+                  <option value="100 Posts/week">100 Posts/week</option>
+                  <option value="200 Posts/week">200 Posts/week</option>
+
+              </select>
+              <br /><br />
+              <select name="cars4" id="cars4" class="drop">
+                  <option value="Education">Education</option>
+                  <option value="UG">UG</option>
+                  <option value="PG">PG</option>
+
+              </select>
+              <br /><br />
+              <input type="text" id="cars5" class="drop" placeholder="Enter your Skills " />
+              <br /><br />
+              <input type="text" id="cars6" class="drop" placeholder="Enter your Contact Number " />
+              <br /><br />
+              <select name="cars7" id="cars7" class="drop">
+                  <option value="Choose Withdraw Payment mode">Choose Withdraw Payment mode</option>
+                  <option value="Wire Tranfer">Wire Tranfer</option>
+                  <option value="Phone pay">Phone pay</option>
+                  <option value="Googlepay">Googlepay</option>
+
+              </select>
+
+              <br /><br />
+              <table>
+                  <tr>
+                      <td style="padding-right:60px;">
+                          <div class="drop1">
+                              <center>
+                  <img src="images/file.png" height="60" width="60" />
+                                  </center>
+                  <input type="file" id="first" />
+                  <h4>Attach Your 1st ID proof</h4>
+              </div>
+                          </td>
+              <td> 
+              <div class="drop1">
+                  <center>
+                  <img src="images/file.png" height="60" width="60" />
+                      </center>
+                  <input type="file" id="second" />
+                  <h4>Attach Your 2nd ID proof</h4>
+              </div>
+                  </td>
+</tr>
+                  </table>
+                  
+              <br/><br/>
+              <input type="checkbox" id="cond" class="check"/>I accept all Terms and Conditions
+          <br/><br/>
+              <input type="submit" id="submit" class="submit" onclick="apply()"/>
+          </center>
+    <script type="text/javascript">
+        function apply() {
+            window.location.href = "successpage.html";
+        }
+    </script>
+</body>
+</html>
